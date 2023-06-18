@@ -1,0 +1,122 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "vash_surveyquestions",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "vash_surveyquestion",
+    "MaxGetRowsCount": 500,
+    "Name": "Survey Questions",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "vash_name": "Name",
+      "vash_Survey": "Survey",
+      "vash_surveyquestion_AsyncOperations": "System Jobs",
+      "vash_surveyquestion_BulkDeleteFailures": "Bulk Delete Failures",
+      "vash_surveyquestion_DuplicateBaseRecord": "Duplicate Records (vash_surveyquestion_DuplicateBaseRecord)",
+      "vash_surveyquestion_DuplicateMatchingRecord": "Duplicate Records (vash_surveyquestion_DuplicateMatchingRecord)",
+      "vash_surveyquestion_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "vash_surveyquestion_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "vash_surveyquestion_ProcessSession": "Process Sessions",
+      "vash_surveyquestion_SyncErrors": "Sync Errors",
+      "vash_surveyquestionid": "Survey Question",
+      "vash_type": "Type",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Survey Questions",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Survey Questions (Views)",
+    "Name": "_vash_surveyquestion_views",
+    "RelatedEntityName": "Survey Questions",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1646f576-5c45-436a-a103-083998491cc0": "Active Survey Questions",
+      "3b7284af-b383-40c2-9bce-9149a11837c9": "Survey Question Lookup View",
+      "760763ba-2c0b-4ae7-9374-9d4bbd46e8f4": "Inactive Survey Questions",
+      "a1cc6357-e7fd-4180-90b6-e67d65d76fc4": "Survey Question Associated View",
+      "f9be7a41-1584-4fe4-8315-b2603a581098": "Survey Question Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Survey Questions)",
+    "Name": "vash_surveyquestion_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Survey Questions"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Survey Questions",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Survey Questions)",
+    "Name": "vash_surveyquestion_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Survey Questions"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Survey Questions",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Survey Question Types",
+    "Name": "vash_surveyquestiontypes",
+    "OptionSetInfoNameMapping": {
+      "271360000": "Text",
+      "271360001": "Rating",
+      "271360002": "Multiple choice",
+      "271360003": "File",
+      "271360004": "Date time"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "vash_type",
+        "OptionSetReferenceEntityName": "Survey Questions"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "vash_type",
+    "RelatedEntityName": "Survey Questions",
+    "Type": "OptionSetInfo"
+  }
+]

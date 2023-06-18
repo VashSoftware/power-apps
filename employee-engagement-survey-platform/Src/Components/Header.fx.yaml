@@ -1,0 +1,64 @@
+Header As CanvasComponent:
+    BackButton: |
+        =false
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =100
+    Title: ="Text"
+    Width: =1366
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =95
+        Size: =40
+        Text: =Header.Title
+        Width: =1366
+        ZIndex: =1
+
+    Rectangle3 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 188, 242, 1)
+        FocusedBorderThickness: =4
+        Height: =5
+        HoverFill: =RGBA(0, 188, 242, 1)
+        PressedFill: =RGBA(0, 188, 242, 1)
+        Width: =1366
+        Y: =95
+        ZIndex: =2
+
+    Icon2 As icon.BackArrow:
+        BorderColor: =RGBA(85, 106, 129, 1)
+        Color: =RGBA(0, 188, 242, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =95
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        PaddingBottom: =20
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =20
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =Header.BackButton
+        Width: =100
+        ZIndex: =3
+

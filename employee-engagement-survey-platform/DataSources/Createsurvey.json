@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "ffa667e7-3afc-461c-a0c1-417c85a39bef",
+    "Name": "Createsurvey",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "112e85e9-dd07-ee11-8f6e-6045bd8ccc09"
+  }
+]

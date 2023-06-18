@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "vash_responses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "vash_response",
+    "MaxGetRowsCount": 500,
+    "Name": "Responses",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "cref9_vash_Survey": "Survey",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "vash_name": "Name",
+      "vash_response_AsyncOperations": "System Jobs",
+      "vash_response_BulkDeleteFailures": "Bulk Delete Failures",
+      "vash_response_DuplicateBaseRecord": "Duplicate Records (vash_response_DuplicateBaseRecord)",
+      "vash_response_DuplicateMatchingRecord": "Duplicate Records (vash_response_DuplicateMatchingRecord)",
+      "vash_response_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "vash_response_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "vash_response_ProcessSession": "Process Sessions",
+      "vash_response_SyncErrors": "Sync Errors",
+      "vash_ResponseAnswer_vash_Response_vash_Re": "Response Answers",
+      "vash_responseid": "Response",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Responses",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Responses (Views)",
+    "Name": "_vash_response_views",
+    "RelatedEntityName": "Responses",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "76bed10e-b164-4842-aae7-7273b07e61bc": "Inactive Responses",
+      "a1a9c83d-1f15-4095-940b-53bd7c035b03": "Response Advanced Find View",
+      "aa982198-6029-4892-9150-c70da8267aba": "Response Lookup View",
+      "d6b79b68-dd35-4399-b8f6-9f0d9875de16": "Response Associated View",
+      "ffeade18-95e4-420f-99b9-46226c54431b": "Active Responses"
+    }
+  },
+  {
+    "DisplayName": "Status (Responses)",
+    "Name": "vash_response_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Responses"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Responses",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Responses)",
+    "Name": "vash_response_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Responses"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Responses",
+    "Type": "OptionSetInfo"
+  }
+]

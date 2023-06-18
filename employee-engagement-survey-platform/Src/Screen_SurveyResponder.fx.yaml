@@ -1,0 +1,4 @@
+Screen_SurveyResponder As screen:
+    Fill: =RGBA(30, 45, 62, 1)
+    LoadingSpinnerColor: =RGBA(0, 188, 242, 1)
+

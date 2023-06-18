@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "vash_surveies",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "vash_survey",
+    "MaxGetRowsCount": 500,
+    "Name": "Surveys",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "cref9_vash_Response_vash_Survey_vash_Survey": "Responses",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "vash_deletedon": "Deleted On",
+      "vash_name": "Name",
+      "vash_survey_AsyncOperations": "System Jobs",
+      "vash_survey_BulkDeleteFailures": "Bulk Delete Failures",
+      "vash_survey_DuplicateBaseRecord": "Duplicate Records (vash_survey_DuplicateBaseRecord)",
+      "vash_survey_DuplicateMatchingRecord": "Duplicate Records (vash_survey_DuplicateMatchingRecord)",
+      "vash_survey_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "vash_survey_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "vash_survey_ProcessSession": "Process Sessions",
+      "vash_survey_SyncErrors": "Sync Errors",
+      "vash_surveyid": "Survey",
+      "vash_SurveyQuestion_vash_Survey_vash_Surv": "Survey Questions",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Surveys",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Surveys (Views)",
+    "Name": "_vash_survey_views",
+    "RelatedEntityName": "Surveys",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1c0f2c3d-2350-41e5-997d-dc85d7ae13e9": "Survey Associated View",
+      "29e386ff-1eef-4775-9677-4f072eb66ccf": "Survey Lookup View",
+      "939da64f-db2b-4046-9e43-1925b1dd67a1": "Inactive Surveys",
+      "b1b4beb6-7a71-4741-95ca-a4e0f8212cf7": "Active Surveys",
+      "ddff141a-cdbd-440d-97d4-f30aef8ee374": "Survey Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Surveys)",
+    "Name": "vash_survey_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Surveys"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Surveys",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Surveys)",
+    "Name": "vash_survey_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Surveys"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Surveys",
+    "Type": "OptionSetInfo"
+  }
+]

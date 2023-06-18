@@ -1,0 +1,112 @@
+TextDialog As CanvasComponent:
+    BackButton: =true
+    Description: ="Text"
+    DialogText: =TextInput1.Text
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =768
+    InputHint: ="Text"
+    OnReset: |-
+        =Set(outcomeVariable, Blank());
+        Reset(TextInput1);
+    Title: ="Text"
+    Width: =1366
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Rectangle2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Fill: =RGBA(0, 0, 0, 0.75)
+        FocusedBorderThickness: =4
+        Height: =768
+        Width: =1366
+        ZIndex: =1
+
+    Button1 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =500
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(30, 45, 62, 1)
+        HoverFill: =Self.Fill
+        PressedColor: =RGBA(30, 45, 62, 1)
+        PressedFill: =Self.Fill
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =15
+        Text: =""
+        Width: =500
+        X: =433
+        Y: =134
+        ZIndex: =2
+
+    Label2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =64
+        Size: =20
+        Text: =TextDialog.Title
+        Width: =419
+        X: =475
+        Y: =158
+        ZIndex: =3
+
+    Label2_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =162
+        Text: =TextDialog.Description
+        VerticalAlign: =VerticalAlign.Top
+        Width: =419
+        X: =473
+        Y: =222
+        ZIndex: =4
+
+    TextInput1 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =Self.BorderColor
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =70
+        HintText: =TextDialog.InputHint
+        HoverBorderColor: =Self.BorderColor
+        HoverColor: =RGBA(0, 0, 0, 1)
+        PressedBorderColor: =Self.BorderColor
+        PressedColor: =RGBA(0, 0, 0, 1)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =13
+        X: =522
+        Y: =384
+        ZIndex: =5
+
